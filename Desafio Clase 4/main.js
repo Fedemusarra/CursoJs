@@ -1,14 +1,33 @@
+let prendas = prompt (" Elige una de las siguientes prendas disponibles: JEAN, BUZO, REMERA").toLocaleUpperCase();
 
-var capital=prompt("Introduzca el monto");
-var interes=prompt("Indique el interes anual o tasa");
-var anos=prompt("Introduzca el numero de años");
-
-
-var n=anos*12;
-var i=interes/100;
+const resta = (a , b) => a - b;
+const suma = (a , b) => a + b;
+const iva = x => x * 0.21;
 
 
-var cuota= capital*(interes*anos/365);
+function eleccion(descuento , iva , precioJean , precioBuzo , PrecioRemera){
+
+    if (prendas == "JEAN"){
+        let precioFinal = resta (suma(precioJean , iva(precioJean)), descuento);
+        alert("el precio final de la prenda elegida es " + precioFinal);
+
+    } else if (prendas == "BUZO"){
+        let precioFinal = resta (suma(precioBuzo , iva(precioBuzo)), descuento);
+        alert("el precio final de la prenda elegida es " + precioFinal);
+    } else if (prendas == "REMERA"){
+        let precioFinal = resta (suma(PrecioRemera , iva(PrecioRemera)), descuento);
+        alert("el precio final de la prenda elegida es " + precioFinal);
+    } else{
+        alert ("Comando invalido, vuelva a intentar")
+
+    }
+}
 
 
-alert ("El calculo de un capital de  "+capital+ " a "+ n+ " meses y interés mensual de "+i+"% es " + cuota);
+
+
+let descuento = 500;
+let precioJean = 2500;
+let precioBuzo = 3100;
+let PrecioRemera = 1500;
+eleccion ( descuento , iva , precioJean , precioBuzo , PrecioRemera);
