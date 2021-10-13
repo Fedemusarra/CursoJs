@@ -1,0 +1,15 @@
+header{
+    border-bottom: 1px solid black;
+   
+    img{
+
+        width: 150px;
+        height: 90px;
+    }
+
+    nav{
+        background-color:white;
+        justify-items: center;
+        grid-area: menu;
+        }
+}

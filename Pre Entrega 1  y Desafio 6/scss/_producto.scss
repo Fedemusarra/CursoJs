@@ -1,0 +1,42 @@
+ .Productos{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+    border-top: 1px solid black;
+
+    .fotos{
+        margin: 15px;
+        
+        img{
+
+            width: 300px;
+        
+        }
+        
+
+        :hover {
+            box-shadow: 0 8px 16px 0 rgba(0,0,0,0.2);
+          }
+        }
+
+        button {
+            transition-duration: 0.4s;
+            border: none;
+            
+        
+            :hover {
+                background-color: #d8afbf; /* Green */
+                color: white;
+                font-size: 15px;
+                border-radius: 15px;
+                border: 2px solid rgb(182, 169, 182);
+                text-align: center;
+                color:black;
+                box-shadow: 0 12px 16px 0 rgba(0,0,0,0.24), 0 17px 50px 0 rgba(0,0,0,0.19);
+                cursor: pointer;
+                position: absolute;
+          }        
+        }
+    
+} 
+    

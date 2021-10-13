@@ -1,0 +1,53 @@
+
+    
+    
+    @media only screen and (max-width:600px){
+        .contenedorDos{
+            border-top: 1px solid black;
+            display:grid;
+            height: 100%;
+            grid-template-columns: 100% ;
+            grid-template-rows: 1fr 1fr;
+            grid-template-areas: "foto1"
+            "foto2";
+            column-gap: 20px;
+            row-gap:20px;
+            align-items: center;
+            justify-items: center;
+
+
+            img{
+                width: 95%;
+                height: 95%;
+
+            }
+            
+        }
+    }
+
+
+
+@media only screen and (min-width:600px){
+    .contenedorDos{
+        border-top: 1px solid black;
+        display:grid;
+        height: 100%;
+        grid-template-columns: 50% 50% ;
+        grid-template-rows: 100%;
+        grid-template-areas: "foto1 foto2"
+        ;
+        column-gap: 20px;
+        row-gap:20px;
+        justify-content: space-evenly;
+        align-items: center;
+        justify-items: center;
+        justify-content: center;
+
+        img{
+            width: 95%;
+            height: 95%;
+
+        }
+    }
+}
+
