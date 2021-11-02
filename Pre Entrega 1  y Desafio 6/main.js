@@ -1,4 +1,6 @@
-class Producto{
+
+
+/* class Producto{
     constructor(nombre, precio ,stock){
             this.nombre = nombre;
             this.precio = precio;
@@ -68,3 +70,4 @@ class Producto{
     
     
     total();
+    */
