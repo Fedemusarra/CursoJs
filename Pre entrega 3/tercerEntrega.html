@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-1BmE4kWBq78iYhFldvKuhfTAU6auU8tT94WrHftjDbrCEXSU1oBoqyl2QvZ6jIW3" crossorigin="anonymous">
+    <link rel="stylesheet" href="//code.jquery.com/ui/1.8.10/themes/smoothness/jquery-ui.css" type="text/css">
+
+
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js" integrity="sha256-/xUj+3OJU5yExlq6GSYGSHk7tPXikynS7ogEvDej/m4=" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="tercerEntrega.css">
+    <meta name="description" content="Sitio web de mi tienda en el que encontrarás ropa de la mejor calidad, las ultimas tendencias, temporada verano, invierno, productos de sale, y contacto">
+    <meta name="keywords"  content="ROPA,, MODA, TEMPORADA, SALE, VERANO, INVIERNO">
+    <title>BlackOutfitters</title>
+</head>
+
+<body>
+
+
+
+
+    <header>
+
+        <nav class="navbar navbar-dark bg-dark">
+            <div class="container-fluid">
+                <a class="navbar-brand"> <img src="images/newlogo.jpg" alt=""></a>
+
+                <div id="caja"> </div>
+
+
+                <form class="d-flex">
+
+
+                    <input class="form-control me-2" type="search" placeholder="Search" aria-label="Search">
+                    <i class="icono fa-solid fa-cart-shopping"></i>
+                    <button class="btn btn-outline-light" type="button" data-bs-toggle="offcanvas" data-bs-target="#offcanvasRight" aria-controls="offcanvasRight"><img class="icono fa-thin fa-user" src="images/shopping-cart (1).svg" alt="">  </button>
+                </form>
+
+
+            </div>
+        </nav>
+
+    </header>
+
+
+
+    <div class="offcanvas offcanvas-end" tabindex="-1" id="offcanvasRight" aria-labelledby="offcanvasRightLabel">
+        <div class="offcanvas-header">
+            <h5 id="offcanvasRightLabel"> Carrito de compras</h5>
+            <button type="button" class="btn-close text-reset" data-bs-dismiss="offcanvas" aria-label="Close"></button>
+        </div>
+        <div class="offcanvas-body">
+
+
+            <div id="carrito" class="rowCarrito">
+
+                <table id="listaCarrito" class="u-full-width">
+
+                    <div>
+                        <thead>
+                            <tr>
+
+                                <th>Imagen</th>
+                                <th>Nombre</th>
+                                <th>Talle</th>
+                                <th> Precio </th>
+                                <th> Cantidad</th>
+                                <th></th>
+
+                            </tr>
+
+                        </thead>
+                        <tbody></tbody>
+
+                        <tbody id="precioTotalTabla"> </tbody>
+
+                    </div>
+
+
+
+                </table>
+                <a href="paginas/iniciarCompra.html" id="iniciarCompra" class="btn btn-dark"> Iniciar compra </a>
+                <a href="" id="vaciarCarrito" class="btn btn-dark"> Vaciar Carrito </a>
+
+
+            </div>
+
+
+
+        </div>
+
+
+
+
+
+
+    </div>
+
+
+    <div class="alertConfirmacion">
+        <p>El producto fue agregado al carrito</p>
+    </div>
+
+
+
+    <div>
+
+        <hr>
+        <img id="banner" src="images/fondoindex.gif" alt="">
+
+        <hr>
+    </div>
+
+  
+
+
+    <div class="tarjetaPadre" id="listaPrendas">
+
+
+        <div class="row row-cols-1 row-cols-md-3 g-4">
+            <div class="col">
+                <div class="card tarjetaHijo">
+                    <img src="images/poleron.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Poleron</h5>
+                        <div class="contenedor  justify-content-mx-auto ">
+                            <select name="" class="talles">
+                        <option value="S"> S </option>
+                        <option value="M">M</option>
+                        <option value="L">L</option>
+                        <option value="XL">XL</option>
+                            </select>
+                            <p class="card-text">$6200</p>
+                            <a href="#" class="btn btn-dark agregarCarrito" data-id="1">Añadir al carrito</a>
+                            <p class="nuevoItem"></p>
+                        </div>
+                        <div class="textoConfirmacion">
+                            <p> Se agregó el producto al carrito </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card tarjetaHijo">
+                    <img src="images/jean.jpg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Campera Jean</h5>
+                        <div class=" contenedor justify-content-mx-auto ">
+                            <select name="" class="talles">
+                                <option value="S"> S </option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                                            </select>
+                            <p class="card-text">$8240</p>
+                            <a href="#" class="btn btn-dark agregarCarrito" data-id="2">Añadir al carrito</a>
+                            <p class="nuevoItem"></p>
+                        </div>
+                        <div class="textoConfirmacion">
+                            <p> Se agregó el producto al carrito </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card tarjetaHijo">
+                    <img src="images/Principal2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Conjunto</h5>
+                        <div class="contenedor  justify-content-mx-auto ">
+                            <select name="" class="talles">
+                                <option value="S"> S </option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                                            </select>
+                            <p class="card-text">$9230</p>
+                            <a href="#" class="btn btn-dark agregarCarrito" data-id="3">Añadir al carrito</a>
+                            <p class="nuevoItem"></p>
+                        </div>
+                        <div class="textoConfirmacion">
+                            <p> Se agregó el producto al carrito </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card tarjetaHijo">
+                    <img src="images/outlet1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Polera</h5>
+                        <div class=" contenedor justify-content-mx-auto ">
+                            <select name="" class="talles">
+                                <option value="S"> S </option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                                            </select>
+                            <p class="card-text">$3240</p>
+                            <a href="#" class="btn btn-dark agregarCarrito" data-id="4">Añadir al carrito</a>
+                            <p class="nuevoItem"></p>
+                        </div>
+                        <div class="textoConfirmacion">
+                            <p> Se agregó el producto al carrito </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="col">
+                <div class="card tarjetaHijo">
+                    <img src="images/outlet2.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">Pantalon</h5>
+                        <div class=" contenedor justify-content-mx-auto ">
+                            <select name="" class="talles">
+                                <option value="S"> S </option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                                            </select>
+                            <p class="card-text">$4440</p>
+                            <a href="#" class="btn btn-dark agregarCarrito" data-id="5">Añadir al carrito</a>
+                            <p class="nuevoItem"></p>
+                        </div>
+                        <div class="textoConfirmacion">
+                            <p> Se agregó el producto al carrito </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col">
+                <div class="card tarjetaHijo">
+                    <img src="images/extra1.jpeg" class="card-img-top" alt="...">
+                    <div class="card-body">
+                        <h5 class="card-title">jogging </h5>
+                        <div class="contenedor justify-content-mx-auto ">
+                            <select name="" class="talles">
+                                <option value="S"> S </option>
+                                <option value="M">M</option>
+                                <option value="L">L</option>
+                                <option value="XL">XL</option>
+                                                            </select>
+                            <p class="card-text">$5500</p>
+                            <a href="#" class="btn btn-dark agregarCarrito" data-id="6">Añadir al carrito</a>
+                            <p class="nuevoItem"></p>
+                        </div>
+                        <div class="textoConfirmacion">
+                            <p> Se agregó el producto al carrito </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+
+
+        </div>
+
+
+
+    </div>
+
+
+
+
+
+
+
+    <script type="text/javascript" src="//ajax.aspnetcdn.com/ajax/jquery.ui/1.8.10/jquery-ui.min.js"></script>
+
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.10.2/dist/umd/popper.min.js" integrity="sha384-7+zCNj/IqJ95wo16oMtfsKbZ9ccEh31eOz1HGyDuCQ6wgnyJNSYdrPa03rtR1zdB" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.3/dist/js/bootstrap.min.js" integrity="sha384-QJHtvGhmr9XOIpI6YVutG+2QOK9T+ZnN4kzFN1RtK3zEFEIsxhlmWl5/YESvpZ13" crossorigin="anonymous"></script>
+
+
+    <script src="tercerEntrega.js"></script>
+
+
+
+
+
+
+
+
+</body>
+
+</html>
